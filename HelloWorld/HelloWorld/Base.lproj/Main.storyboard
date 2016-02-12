@@ -22,37 +22,51 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niz-du-XXg">
-                                <rect key="frame" x="25" y="28" width="352" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="352" id="dpJ-m4-iDs"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niz-du-XXg">
+                                <rect key="frame" x="20" y="28" width="352" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXx-cV-XqS">
-                                <rect key="frame" x="519" y="550" width="46" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lbs-dr-l6V">
+                                <rect key="frame" x="485" y="552" width="95" height="29"/>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Night"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segControlPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="J3x-be-3cv"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oad-ni-Vv8">
+                                <rect key="frame" x="20" y="57" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0g9-sY-Zdf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBm-BV-x83">
+                                <rect key="frame" x="125" y="57" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7L-7O-ddZ"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKo-vl-iN0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="WXx-cV-XqS" secondAttribute="bottom" constant="20" symbolic="YES" id="1nb-hW-z5A"/>
-                            <constraint firstItem="4A6-Dz-pzH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KS7-Vo-abT"/>
-                            <constraint firstItem="4A6-Dz-pzH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W9X-Y9-9gO"/>
-                            <constraint firstItem="Niz-du-XXg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="eUm-fI-gDw"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Niz-du-XXg" secondAttribute="bottom" constant="551" id="hzE-Va-kAz"/>
-                            <constraint firstAttribute="trailing" secondItem="4A6-Dz-pzH" secondAttribute="trailing" id="tvl-k0-rFz"/>
-                            <constraint firstItem="Niz-du-XXg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="yUS-kc-zfM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WXx-cV-XqS" secondAttribute="trailing" constant="15" id="zXQ-60-0sI"/>
-                            <constraint firstItem="4A6-Dz-pzH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="zwO-Zf-rod"/>
+                            <constraint firstItem="4A6-Dz-pzH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="5Bl-jG-7ej"/>
+                            <constraint firstItem="lbs-dr-l6V" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6c6-uG-9wI"/>
+                            <constraint firstItem="4A6-Dz-pzH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7nL-NN-mA2"/>
+                            <constraint firstAttribute="trailing" secondItem="4A6-Dz-pzH" secondAttribute="trailing" id="Hyv-7l-UfL"/>
+                            <constraint firstAttribute="bottom" secondItem="lbs-dr-l6V" secondAttribute="bottom" constant="20" symbolic="YES" id="W9o-yn-c9r"/>
+                            <constraint firstItem="4A6-Dz-pzH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nqr-zC-4fP"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="messageLabel" destination="Niz-du-XXg" id="ivd-VN-3QS"/>
+                        <outlet property="textField" destination="oad-ni-Vv8" id="Sgk-nV-Jr8"/>
                         <outlet property="worldImage" destination="4A6-Dz-pzH" id="aQe-AO-t8D"/>
                     </connections>
                 </viewController>
