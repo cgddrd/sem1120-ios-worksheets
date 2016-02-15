@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99219E701C726A8500536422 /* NamerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99219E6F1C726A8500536422 /* NamerViewController.swift */; };
 		994ABAA91C6E3531007B79E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994ABAA81C6E3531007B79E1 /* AppDelegate.swift */; };
 		994ABAAB1C6E3531007B79E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994ABAAA1C6E3531007B79E1 /* ViewController.swift */; };
 		994ABAAE1C6E3531007B79E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994ABAAC1C6E3531007B79E1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99219E6F1C726A8500536422 /* NamerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamerViewController.swift; sourceTree = "<group>"; };
 		994ABAA51C6E3531007B79E1 /* ColourNamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourNamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		994ABAA81C6E3531007B79E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		994ABAAA1C6E3531007B79E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				994ABAA81C6E3531007B79E1 /* AppDelegate.swift */,
 				994ABAAA1C6E3531007B79E1 /* ViewController.swift */,
+				99219E6F1C726A8500536422 /* NamerViewController.swift */,
 				994ABAAC1C6E3531007B79E1 /* Main.storyboard */,
 				994ABAAF1C6E3531007B79E1 /* Assets.xcassets */,
 				994ABAB11C6E3531007B79E1 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				994ABAAB1C6E3531007B79E1 /* ViewController.swift in Sources */,
+				99219E701C726A8500536422 /* NamerViewController.swift in Sources */,
 				994ABAA91C6E3531007B79E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +288,7 @@
 				994ABAB91C6E3531007B79E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
