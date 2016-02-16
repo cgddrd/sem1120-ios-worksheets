@@ -15,6 +15,9 @@ class NamerViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // CG - Auto-trigger keyboard display upon view load.
+        colourNameTextField?.becomeFirstResponder();
     }
     
     override func didReceiveMemoryWarning() {
