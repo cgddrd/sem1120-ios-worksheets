@@ -121,9 +121,9 @@ class TableViewController: UITableViewController {
         return "Connor's Header"
     }
     
-    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "Connor's Footer"
-    }
+    // override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    //   return "Connor's Footer"
+    // }
 
 
     /*
