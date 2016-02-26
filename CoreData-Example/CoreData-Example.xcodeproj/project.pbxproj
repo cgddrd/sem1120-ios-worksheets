@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99A3168D1C809A54002BDC75 /* AddSpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3168C1C809A54002BDC75 /* AddSpeakerViewController.swift */; };
+		99A316911C80A77F002BDC75 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3168E1C80A77F002BDC75 /* Speaker+CoreDataProperties.swift */; };
+		99A316921C80A77F002BDC75 /* Talk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3168F1C80A77F002BDC75 /* Talk+CoreDataProperties.swift */; };
+		99A316931C80A77F002BDC75 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A316901C80A77F002BDC75 /* Talk.swift */; };
 		99CC15251C7DBCF700834A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC15241C7DBCF700834A15 /* AppDelegate.swift */; };
 		99CC15271C7DBCF700834A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC15261C7DBCF700834A15 /* ViewController.swift */; };
 		99CC152A1C7DBCF700834A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CC15281C7DBCF700834A15 /* Main.storyboard */; };
 		99CC152F1C7DBCF700834A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CC152E1C7DBCF700834A15 /* Assets.xcassets */; };
 		99CC15321C7DBCF700834A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CC15301C7DBCF700834A15 /* LaunchScreen.storyboard */; };
 		99CC15461C7DC3D100834A15 /* CoreData_Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99CC15441C7DC3D100834A15 /* CoreData_Example.xcdatamodeld */; };
-		99CC15491C7DC47A00834A15 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC15471C7DC47A00834A15 /* Speaker+CoreDataProperties.swift */; };
 		99CC154A1C7DC47A00834A15 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC15481C7DC47A00834A15 /* Speaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99A3168C1C809A54002BDC75 /* AddSpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSpeakerViewController.swift; sourceTree = "<group>"; };
+		99A3168E1C80A77F002BDC75 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Speaker+CoreDataProperties.swift"; path = "../Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99A3168F1C80A77F002BDC75 /* Talk+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Talk+CoreDataProperties.swift"; path = "../Talk+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		99A316901C80A77F002BDC75 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Talk.swift; path = ../Talk.swift; sourceTree = "<group>"; };
 		99CC15211C7DBCF700834A15 /* CoreData-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CC15241C7DBCF700834A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99CC15261C7DBCF700834A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +33,6 @@
 		99CC15311C7DBCF700834A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99CC15331C7DBCF700834A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99CC15451C7DC3D100834A15 /* CoreData_Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData_Example.xcdatamodel; sourceTree = "<group>"; };
-		99CC15471C7DC47A00834A15 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Speaker+CoreDataProperties.swift"; path = "../Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		99CC15481C7DC47A00834A15 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = ../Speaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,10 +66,13 @@
 		99CC15231C7DBCF700834A15 /* CoreData-Example */ = {
 			isa = PBXGroup;
 			children = (
-				99CC15471C7DC47A00834A15 /* Speaker+CoreDataProperties.swift */,
+				99A3168E1C80A77F002BDC75 /* Speaker+CoreDataProperties.swift */,
+				99A3168F1C80A77F002BDC75 /* Talk+CoreDataProperties.swift */,
+				99A316901C80A77F002BDC75 /* Talk.swift */,
 				99CC15481C7DC47A00834A15 /* Speaker.swift */,
 				99CC15241C7DBCF700834A15 /* AppDelegate.swift */,
 				99CC15261C7DBCF700834A15 /* ViewController.swift */,
+				99A3168C1C809A54002BDC75 /* AddSpeakerViewController.swift */,
 				99CC15281C7DBCF700834A15 /* Main.storyboard */,
 				99CC152E1C7DBCF700834A15 /* Assets.xcassets */,
 				99CC15301C7DBCF700834A15 /* LaunchScreen.storyboard */,
@@ -146,9 +155,12 @@
 			files = (
 				99CC15271C7DBCF700834A15 /* ViewController.swift in Sources */,
 				99CC15251C7DBCF700834A15 /* AppDelegate.swift in Sources */,
+				99A3168D1C809A54002BDC75 /* AddSpeakerViewController.swift in Sources */,
 				99CC154A1C7DC47A00834A15 /* Speaker.swift in Sources */,
-				99CC15491C7DC47A00834A15 /* Speaker+CoreDataProperties.swift in Sources */,
+				99A316931C80A77F002BDC75 /* Talk.swift in Sources */,
 				99CC15461C7DC3D100834A15 /* CoreData_Example.xcdatamodeld in Sources */,
+				99A316911C80A77F002BDC75 /* Speaker+CoreDataProperties.swift in Sources */,
+				99A316921C80A77F002BDC75 /* Talk+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

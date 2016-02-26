@@ -1,5 +1,5 @@
 //
-//  Speaker+CoreDataProperties.swift
+//  Talk+CoreDataProperties.swift
 //  CoreData-Example
 //
 //  Created by Connor Goddard on 26/02/2016.
@@ -12,12 +12,10 @@
 import Foundation
 import CoreData
 
-extension Speaker {
+extension Talk {
 
-    @NSManaged var biography: String?
-    @NSManaged var email: String?
-    @NSManaged var forename: String?
-    @NSManaged var surname: String?
-    @NSManaged var talks: NSSet?
+    @NSManaged var title: String?
+    @NSManaged var abstract: String?
+    @NSManaged var speakers: NSSet?
 
 }
